@@ -16,7 +16,7 @@ const SignAuthorize = () => {
     const [users, setUsers] = useState([])
     const [selectedUsers, setSelectedUsers] = useState([])
     const [content, setContent] = useState('OAUTH ....')
-
+    const [showTasksUsers, setShowTasksUsers] = useState(true)
 
     useEffect(() => {
         const search = window.location.search;
@@ -47,6 +47,7 @@ const SignAuthorize = () => {
             getTasks();
             getUsers();
         }else{
+            setShowTasksUsers(false);
             callFunc();
         }
     //eslint-disable-next-line   
@@ -138,7 +139,10 @@ const SignAuthorize = () => {
         <br/>
             { errorMessage && <h4 className="error"> { errorMessage } </h4> }
             <br/>
-            <form onSubmit={(e) => handleSubmit(e)}>
+            {
+                showTasksUsers && 
+                <>
+                <form onSubmit={(e) => handleSubmit(e)}>
             <h5>Select the file to be signed:</h5>
             <div className="presentFiles">
             { 
@@ -176,6 +180,9 @@ const SignAuthorize = () => {
             </div>
             </form>
             <br/>
+                </>
+            }
+            
             <br/>
             <div>
                 <h1>{content}</h1>
