@@ -1,0 +1,243 @@
+@import url('https://fonts.googleapis.com/css2?family=Akaya+Telivigala&display=swap');
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+p{
+  margin: 0;
+}
+body {
+  font-family: 'Akaya Telivigala', cursive;
+}
+
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+.navbar {
+  border-top: 5px solid;
+  border-image:   linear-gradient(to right, grey 25%, yellow 25%, yellow 50%,red 50%, red 75%, teal 75%) 5;
+}
+input[type="text"], input[type="password"], input[type="email"] {
+  padding: 7px;
+  width: 25rem; 
+  font-size: 14px;
+  margin-bottom: 7px;
+}
+input[type="checkbox"]{
+  margin-right: 4px;
+  cursor: pointer;
+}
+input[type='submit'] {
+  cursor: pointer;
+  padding: 5px 11px;
+  background-color:darkgreen;
+  border-radius: 5px;
+  color: white;
+  font-weight: bold;
+  width: 7rem;
+}
+input[type='radio'] {
+  cursor: pointer;
+}
+
+.login-header{
+  text-decoration: underline;
+  text-align: center;
+}
+
+.App-header {
+  background-color: #282c34;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.header{
+  padding: 7px;
+  margin: 0;
+  width: 100%;
+  background: #000046;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #1CB5E0, #000046);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #1CB5E0, #000046); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+  font-size: 30px;
+  color: white;
+  display: flex;
+  align-items:stretch;
+  justify-content:space-between;
+}
+.header-text{
+  float: left;
+}
+.header-buttons button{
+  margin-right: 5px;
+}
+.form-control{
+  margin-top: 7px;
+}
+.add-form{
+  display: inline-block;
+  border: 2px solid black;
+  text-align: left;
+  margin-top: 1rem; 
+  padding: 2rem 2rem 2rem;
+}
+.error{
+  color: red;
+  text-decoration: underline;
+}
+footer {
+  display: block;
+  min-width: 100%;
+  margin: auto;
+  margin-top: 4rem;
+  text-align: center;
+}
+
+footer hr{
+  width: 50%;
+  margin: auto;
+}
+
+.initiateDraftButton{
+  margin-top: 1rem;
+}
+
+.contracts-table{
+  margin-left: 7rem;
+  margin-right: 7rem;
+  padding: 1rem;
+  border: 2px solid black;
+}
+
+.tableButton{
+  margin-left: 3px;
+  margin-bottom: 3px;
+}
+
+.create-draft-form{
+  border: 2px solid green;
+  border-radius: 25px;
+  font-size: 18px;
+  text-align: left;
+  margin-left: 7rem;
+  margin-right: 7rem;
+  padding: 3rem;
+}
+
+.create-draft-buttons div{
+  margin: auto;
+}
+.create-draft-buttons div button{
+  margin:5px;
+}
+#pdfviewercontainer{
+  margin-left: 7rem;
+  margin-right: 7rem;
+  margin-top: 3rem;
+}
+.button-grp{
+  margin: 5px;
+}
+.button-grp button{
+  margin: 5px;
+}
+.edit-contract-form .form-control{
+  border: 1px solid black;
+  margin-top: 2rem;
+}
+.edit-contract-form .form-control h4{
+  text-decoration: underline;
+}
+.edit-contract-form .form-control label{
+  margin-left: 3px;
+  margin-bottom: 7px;
+}
+.edit-contract{
+  border: 1px solid black;
+}
+.jumbotron{
+  margin-top: 2rem;
+  padding-bottom: 7rem;
+}
+.jumbotron div input{
+  margin-right: 7px;
+  font-size: 19px;
+  padding: 3px;
+  width: 350px;
+}
+.jumbotron div{
+  margin-bottom: 4rem;
+}
+.jumbotron h3{
+ text-decoration: underline;
+}
+#adobe-dc-view{
+  height: 680px;
+}
+.status-text{
+  font-weight: bold;
+  color: crimson;
+}
+.btn-outline-warning{
+  color: black;
+  background-color: darkorange;
+  pointer-events: none;
+}
+a,.sign-btn{
+  padding: 6px;
+  margin-left: 3px; 
+}
+a:hover,.sign-btn:hover{
+  background-color: beige;
+}
+.upload-file{
+  text-align: center;
+  min-height: 100vh;
+}
+.upload-file-box{
+  border: 3px solid darkgreen;
+  margin: 7rem;
+  margin-top: 0;
+  padding: 3rem;
+}
+.actions{
+  min-height: 100vh;
+}
+ul{
+  list-style-type: none;
+}
+.presentFiles{
+  text-align: left;
+  margin-left: 25%;
+}
+.presentFiles li{
+  margin-bottom: 10px;
+}
+.ind-comp{
+  border: 1px solid black;
+  border-radius: 25px;
+  padding: 3rem;
+  margin: 5rem;
+  margin-top: 1rem;
+}
+input[type="number"]{
+  margin-right: 3px;
+}
+form h5, form h4{
+  text-decoration: underline;
+}
