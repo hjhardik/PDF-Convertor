@@ -37,7 +37,6 @@ input[type="checkbox"]{
 input[type='submit'] {
   cursor: pointer;
   padding: 5px 11px;
-  background-color:darkgreen;
   border-radius: 5px;
   color: white;
   font-weight: bold;

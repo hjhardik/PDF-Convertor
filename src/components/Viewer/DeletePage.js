@@ -120,7 +120,7 @@ const DeletePage = () => {
                     <br/>
                     <div className="button-grp">
                     <Button class="btn btn-primary" text="Delete Pages" onClick={(e)=>handleSubmit(e)} />
-                    <Button class="btn btn-outline-dange" text="Cancel" onClick={cancelHandler} />
+                    <Button class="btn btn-outline-danger" text="Cancel" onClick={cancelHandler} />
                 </div>
                 </div>
             </form>
