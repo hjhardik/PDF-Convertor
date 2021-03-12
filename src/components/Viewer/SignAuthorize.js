@@ -186,6 +186,9 @@ const SignAuthorize = () => {
             <br/>
             <div>
                 <h1>{content}</h1>
+                <br/>
+                <br/>
+                <br/>
             </div>
         </div>
     )
