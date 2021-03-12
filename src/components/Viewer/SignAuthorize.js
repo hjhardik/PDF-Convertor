@@ -186,6 +186,7 @@ const SignAuthorize = () => {
             <br/>
             <div>
                 <h1>{content}</h1>
+                <Button class="btn btn-primary" onClick={(e) => cancelHandler(e)} text="Back To Dashboard"/> 
                 <br/>
                 <br/>
                 <br/>
