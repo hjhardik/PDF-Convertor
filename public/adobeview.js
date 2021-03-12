@@ -2,7 +2,7 @@ document.addEventListener("adobe_dc_view_sdk.ready", function()
     {   //SERVER URL
         let serverURL = "https://pdf-convertor-server.herokuapp.com"; //UPDATE
         //PDF EMBED API CLIENT ID
-        let embedClientId = "e3cc4a0410314a1abbdf161127b16b7f"; //UPDATE
+        let embedClientId = "4e32a2d2a6fe4d18ae4c873d968c2837"; //UPDATE
 
         let viewDiv = document.getElementById("pdfviewercontainer");
         let fileName = viewDiv.getAttribute("pdf-file");
