@@ -22,7 +22,7 @@ const SignAuthorize = () => {
         const search = window.location.search;
         const params = new URLSearchParams(search);
         const code = params.get('code');
-        
+
         if(code === undefined || code===null){
             const getTasks = async () => {
                 let filesFromServer = await fetch(`${serverURL}/contracts/`, {
@@ -112,7 +112,7 @@ const SignAuthorize = () => {
                     Accept: 'application/json',
                 'Content-Type': 'application/json'
                 },
-                body: JSON.stringify({contract:selectedMembers[0], email:selectedUsers[0] , code, state, api_access_point})
+                body: JSON.stringify({contract:selectedMembers, email:selectedUsers , code, state, api_access_point})
             }).then((data)=>data.json());
 
             window.open(redirectUrl.data, "_self");  
@@ -123,7 +123,7 @@ const SignAuthorize = () => {
             headers: {
             'Content-Type': 'application/json'
             },
-            body: JSON.stringify({contract:selectedMembers[0], email:selectedUsers[0], code, state, api_access_point})
+            body: JSON.stringify({contract:selectedMembers, email:selectedUsers, code, state, api_access_point})
         }).then((data)=>data.json());
         if(res.success){
             setContent('Authorization successful. Contract sent through email.') 
